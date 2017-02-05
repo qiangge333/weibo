@@ -1,0 +1,240 @@
+2016/11/28 14:08:56 form ImmutableMultiDict([('content', '你好'), ('weibo_id', '2')]) 2 <class 'int'>
+2016/11/28 14:08:57 debug < Comment
+content: (你好)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004518898>)
+weibo_id: (2)
+created_time: (11/28)
+username: (xiaogua)
+id: (2) 
+>
+
+2016/11/28 14:09:04 form ImmutableMultiDict([('content', '你好'), ('weibo_id', '2')]) 2 <class 'int'>
+2016/11/28 14:09:04 debug < Comment
+content: (你好)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004518898>)
+weibo_id: (2)
+created_time: (11/28)
+username: (xiaogua)
+id: (2) 
+>
+
+2016/11/28 14:11:34 weibo and comments < Weibo
+content: (你好)
+username: (gua)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004413860>)
+created_time: (11/27)
+id: (1) 
+>
+ [< Comment
+content: (写的好)
+username: (gua)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004413BA8>)
+weibo_id: (1)
+created_time: (11/27)
+id: (1) 
+>
+]
+2016/11/28 14:11:49 form ImmutableMultiDict([('content', 'good'), ('weibo_id', '1')]) 1 <class 'int'>
+2016/11/28 14:11:49 debug < Comment
+content: (写的好)
+username: (gua)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004471CF8>)
+weibo_id: (1)
+created_time: (11/27)
+id: (1) 
+>
+
+2016/11/28 14:12:30 form ImmutableMultiDict([('weibo_id', '1'), ('content', 'good boy')]) 1 <class 'int'>
+2016/11/28 14:12:30 debug < Comment
+weibo_id: (1)
+created_time: (11/27)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x00000000045022B0>)
+id: (1)
+username: (gua)
+content: (写的好) 
+>
+
+2016/11/28 14:12:30 weibo and comments < Weibo
+created_time: (11/27)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004502BA8>)
+id: (1)
+username: (gua)
+content: (你好) 
+>
+ [< Comment
+weibo_id: (1)
+created_time: (11/27)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004502D68>)
+id: (1)
+username: (gua)
+content: (写的好) 
+>
+, < Comment
+weibo_id: (1)
+created_time: (11/28)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004502DD8>)
+id: (2)
+username: (xiaogua)
+content: (good) 
+>
+, < Comment
+weibo_id: (1)
+created_time: (11/28)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004502E48>)
+id: (3)
+username: (xiaogua)
+content: (good boy) 
+>
+]
+2016/11/28 14:13:47 weibo and comments < Weibo
+created_time: (11/27)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004528160>)
+id: (1)
+username: (gua)
+content: (你好) 
+>
+ [< Comment
+weibo_id: (1)
+created_time: (11/27)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004528198>)
+id: (1)
+username: (gua)
+content: (写的好) 
+>
+, < Comment
+weibo_id: (1)
+created_time: (11/28)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004528128>)
+id: (2)
+username: (xiaogua)
+content: (good) 
+>
+, < Comment
+weibo_id: (1)
+created_time: (11/28)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x00000000045282E8>)
+id: (3)
+username: (xiaogua)
+content: (good boy) 
+>
+]
+2016/11/28 14:15:54 user, comment, weibo < User
+username: (xiaogua)
+password: (123)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004925908>)
+created_time: (11/28)
+id: (3) 
+>
+ < Comment
+username: (xiaogua)
+weibo_id: (1)
+content: (good boy)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004455C18>)
+created_time: (11/28)
+id: (3) 
+>
+ < Weibo
+username: (gua)
+content: (你好)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x00000000049383C8>)
+created_time: (11/27)
+id: (1) 
+>
+
+2016/11/28 14:15:54 weibo and comments < Weibo
+username: (gua)
+content: (你好)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004938668>)
+created_time: (11/27)
+id: (1) 
+>
+ [< Comment
+username: (gua)
+weibo_id: (1)
+content: (写的好)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004938A58>)
+created_time: (11/27)
+id: (1) 
+>
+, < Comment
+username: (xiaogua)
+weibo_id: (1)
+content: (good)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004938AC8>)
+created_time: (11/28)
+id: (2) 
+>
+, < Comment
+username: (xiaogua)
+weibo_id: (1)
+content: (good boy)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004938B38>)
+created_time: (11/28)
+id: (3) 
+>
+]
+2016/11/28 14:17:00 weibo and comments < Weibo
+username: (xiaogua)
+content: (吃瓜)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x000000000496A160>)
+created_time: (11/28)
+id: (2) 
+>
+ []
+2016/11/28 14:17:07 form ImmutableMultiDict([('weibo_id', '2'), ('content', 'good')]) 2 <class 'int'>
+2016/11/28 14:17:07 debug < Comment
+username: (xiaogua)
+weibo_id: (1)
+content: (good)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x0000000004455CF8>)
+created_time: (11/28)
+id: (2) 
+>
+
+2016/11/28 14:17:07 weibo and comments < Weibo
+username: (xiaogua)
+content: (吃瓜)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x000000000496AAC8>)
+created_time: (11/28)
+id: (2) 
+>
+ [< Comment
+username: (xiaogua)
+weibo_id: (2)
+content: (good)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x000000000496A5F8>)
+created_time: (11/28)
+id: (4) 
+>
+]
+2016/11/28 14:17:08 user, comment, weibo < User
+username: (xiaogua)
+password: (123)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x000000000496ADD8>)
+created_time: (11/28)
+id: (3) 
+>
+ < Comment
+username: (xiaogua)
+weibo_id: (2)
+content: (good)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x000000000498A0F0>)
+created_time: (11/28)
+id: (4) 
+>
+ < Weibo
+username: (xiaogua)
+content: (吃瓜)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x000000000498A278>)
+created_time: (11/28)
+id: (2) 
+>
+
+2016/11/28 14:17:09 weibo and comments < Weibo
+username: (xiaogua)
+content: (吃瓜)
+_sa_instance_state: (<sqlalchemy.orm.state.InstanceState object at 0x000000000496A2B0>)
+created_time: (11/28)
+id: (2) 
+>
+ []

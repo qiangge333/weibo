@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ w.username }}的微博</title>
+</head>
+<body>
+    <form action={{ url_for('weibo.add') }} method="post">
+        <input name="content" placeholder="新微博">
+        <button>发微博</button>
+    <div>
+        <div>
+            <a href={{ url_for('weibo.detail', weibo_id=w.id) }}>
+            {{ w.content }} form {{ w.username }} @ {{ w.created_tiem }}
+            </a>
+        </div>
+    </div>
+</body>
+</html>

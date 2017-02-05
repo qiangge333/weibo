@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>所有微博</title>
+</head>
+<body>
+    <a href={{ url_for("user.register_view") }}>注册</a>
+    <a href={{ url_for("user.login_view") }}>登录</a>
+    <form action="/weibo/add" method="post">
+        <input name="content" placeholder="新微博">
+        <button>发微博</button>
+    </form>
+    <div>
+        {% for w in weibos %}
+        <div>
+            <a href={{ url_for('weibo.detail', weibo_id=w.id) }}>
+            {{ w.content }} from {{ w.username }} @ {{ w.created_time }}
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

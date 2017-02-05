@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ weibo.content }}</title>
+</head>
+<body>
+    <div>
+        {{ weibo.content }}
+        <br>
+        {{ weibo.username }}@{{ weibo.created_time }}
+        <br>
+        <a href="/weibo/edit/{{ weibo.id }}">修改</a>
+        <a href="/weibo/delete/{{ weibo.id }}">删除</a>
+    </div>
+    <form action="/comment/add" method="post">
+        <input name="content" placeholder="评论">
+        <input name="weibo_id" value={{ weibo.id }} hidden>
+        <button>评论</button>
+    </form>
+    <div>
+        {% for c in comments %}
+        <div>
+            <a href="/comment/delete/{{ c.id }}">删除评论</a>
+            {{ c.content }} from {{ c.username }}@{{ c.created_time }}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
